@@ -26,9 +26,7 @@ export const ProfilePage: React.FC = () => {
                     work
                 </Typography>
                 <Button type="submit" variant="contained" color="success" disableElevation={true}
-                        disableRipple={true} sx={{padding: 2, marginTop: 4,}} className="profile-page__button" onClick={
-                    () => dispatch(logOutUser())
-                }>
+                        disableRipple={true} sx={{padding: 2, marginTop: 4,}} className="profile-page__button" onClick={() => dispatch(logOutUser())}>
                     Log Out
                 </Button>
                 <img src={logOutImg} alt="logautImg"/>
