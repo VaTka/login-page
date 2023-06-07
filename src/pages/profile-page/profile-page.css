@@ -1,0 +1,36 @@
+.profile-page__content {
+    margin-top: 200px;
+    height: fit-content;
+    width: calc(100vw - 96px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-page__container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-page__title {
+    position: relative;
+}
+
+.profile-page__title img {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+}
+
+.profile-page__text {
+    max-width: 500px;
+    text-align: center;
+}
+
+.profile-page__button {
+    max-width: fit-content;
+}

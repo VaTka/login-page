@@ -1,0 +1,32 @@
+.auth-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-page__content {
+    background-color: #1D283A;
+    width: fit-content;
+    height: 100vh;
+    padding: 48px;
+}
+
+.auth-form__title {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.auth-form__subtitle {
+    color: #539713;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}

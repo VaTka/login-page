@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {AuthPage} from "./pages/auth-page";
+import {ThemeProvider} from "@mui/material";
+import {createTheme} from "@mui/material/styles";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const theme = createTheme({
+        typography: {
+            fontFamily: "Montserrat",
+            fontWeightLight: 400,
+            fontWeightRegular: 500,
+            fontWeightMedium: 600,
+            fontWeightBold: 700,
+        },
+    })
+    return (
+        <BrowserRouter>
+            <ThemeProvider theme={theme}>
+                <AuthPage/>
+            </ThemeProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;
