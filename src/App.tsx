@@ -2,7 +2,7 @@ import React from 'react';
 import {AuthPage} from "./pages/auth-page";
 import {ThemeProvider} from "@mui/material";
 import {createTheme} from "@mui/material/styles";
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 
 function App() {
     const theme = createTheme({
@@ -15,11 +15,11 @@ function App() {
         },
     })
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ThemeProvider theme={theme}>
                 <AuthPage/>
             </ThemeProvider>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
